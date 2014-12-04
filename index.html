@@ -3,7 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Comp Proposalt</title>
-	
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 	
 
 	<style type="text/css">
@@ -45,7 +50,10 @@
 			
 			
 		}
-		
+		h2{
+			
+		}
+		}
 		h3{
 			background: rgba(0,0,0,0.2);
 			text-align: center;
@@ -218,6 +226,34 @@
 	
 
 <center>
+
+<div class="TTWForm-container">
+      
+      
+     <form action="process_form.php" class="TTWForm" method="post" novalidate="">
+           
+           
+          <div id="field1-container" class="field f_100">
+               <label for="field1">
+                    UserName
+               </label>
+               <input type="text" name="field1" id="field1" required="required">
+          </div>
+           
+           
+          <div id="field2-container" class="field f_100">
+               <label for="field2">
+                    Password
+               </label>
+               <input type="password" name="field2" id="field2" required="required">
+          </div>
+           
+           
+          <div id="form-submit" class="field f_100 clearfix submit">
+               <input type="submit" value="Submit">
+          </div>
+     </form>
+</div>
 <div class="form-title"><h2>Sign in</h2></div>
 <div class="form-title">Username</div>
 <input class="form-field" type="text" name="firstname" /><br />
