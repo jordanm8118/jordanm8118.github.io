@@ -1,1 +1,273 @@
-,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Comp Proposalt</title>
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	
+
+	<style type="text/css">
+	
+		html { 
+		  background: url("http://images.medicaldaily.com/sites/medicaldaily.com/files/styles/headline/public/2014/05/02/produce.jpg") no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+}
+		body {
+		 // background: #2E2EFE; 
+		  //color: #fff;
+		  font: 16px/1.8 sans-serif;
+		}
+		.container {
+			width: 84%;
+			margin:0 auto;
+			max-width:1140px;
+		}
+		header {
+			width: 100%;
+			margin:0px auto;
+		}
+		h1 {
+			background: rgba(0,.2,0);
+			text-align: center;
+			color:#fff;
+			font: 95px/1 "Impact";
+			text-transform: uppercase;
+			display: block;
+			text-shadow:#3C8500 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#3C8500 -3px 3px 0,
+			#3C8500 -4px 4px 0;
+			margin: 5% auto 5%;
+			
+			
+			
+		}
+		h2{
+			background: rgba(0,.2,0);
+			text-align: center;
+			color:#fff;
+			font: 35px/1 "Impact";
+			text-transform: uppercase;
+			display: block;
+
+			
+	
+		}
+		h3{
+			background: rgba(0,0,0,0.2);
+			text-align: center;
+			color:#000;
+			font: 60px/1 "Impact";
+			text-transform: uppercase;
+			display: block;
+			text-shadow:#3C8500 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#3C8500 -3px 3px 0,
+			#3C8500 -4px 4px 0;
+			margin: 5% auto 5%;	
+			
+			
+		}
+.button{text-decoration:none; text-align:center; 
+ padding:11px 32px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:18px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+  }.button:hover{
+ padding:11px 32px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:18px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }.button:active{
+ padding:11px 32px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:18px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ 
+ form-container {
+   border: 4px solid #f2e3d2;
+   background: #c9b7a2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f2e3d2), to(#c9b7a2));
+   background: -webkit-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -moz-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -ms-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -o-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background-image: -ms-linear-gradient(top, #f2e3d2 0%, #c9b7a2 100%);
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:300px;
+   }
+.form-field {
+   border: 1px solid #c9b7a2;
+   background: #e4d5c3;
+   -webkit-border-radius: 11px;
+   -moz-border-radius: 11px;
+   border-radius: 11px;
+   color: #c9b7a2;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+   }
+.form-field:focus {
+   background: #fff;
+   color: #725129;
+   }
+  .form_background: #fff;
+  
+  //bootstrap
+  body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+	</style>
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+	<h1> Gator Meals</h1>
+	<h3>Chomp Those Calories</h3>
+	
+
+<center>
+
+
+
+
+<div class="form-title"><h2>Sign in</h2></div>
+<div class="form-title">Username</div>
+<input class="form-field" type="text" name="firstname" /><br />
+<div class="form-title">Password</div>
+<input class="form-field" type="text" name="email" /><br />
+
+<!--
+<div class="submit-container">
+<input class="submit-button" type="submit" value="Submit" />
+</div>
+-->	
+	
+	
+	<br></br>
+	<br></br>
+	<br></br>
+	<div class="container">
+	<a href="Student_Login.html" class="button"/>Log In As Student</a>
+	<a href="Adminstrator_Login.html" class="button"/>Log In As Administrator</a>
+	
+	
+
+	</div>
+</center>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 	<script src="jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$("#fittext1").fitText();
+		$("#fittext2").fitText(1.2);
+		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+	</script>
+	
+</body>
+</html>
