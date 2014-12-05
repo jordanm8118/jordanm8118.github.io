@@ -2,38 +2,160 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>America</title>
+	<title>Comp Proposalt</title>
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 	
 
 	<style type="text/css">
-		body {
-		  background: #233a40; 
-		  color: #fff;
-		  font: 16px/1.8 sans-serif;
-		}
-		.container {
-			width: 84%;
-			margin:0 auto;
-			max-width:1140px;
-		}
-		header {
-			width: 100%;
-			margin:0px auto;
-		}
-		h1 {
-			background: rgba(0,0,0,0.2);
-			text-align: center;
-			color:#fff;
-			font: 95px/1 "Impact";
-			text-transform: uppercase;
-			display: block;
-			text-shadow:#253e45 -1px 1px 0,
-			#253e45 -2px 2px 0,
-			#d45848 -3px 3px 0,
-			#d45848 -4px 4px 0;
-			margin: 5% auto 5%;
-		}
+	
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html { 
+  background: url(http://www.themesltd.com/backgrounds/food/juicy_kiwi_fruits.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+div.wrapper {
+  margin: 20px auto;
+  width: 350px;
+}
+
+nav.vertical {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  overflow: hidden;
+  text-align: center;
+}
+
+  nav.vertical > ul {
+    list-style-type: none;
+  }
+
+    nav.vertical > ul > li {
+      display: block;
+    }
+
+      nav.vertical > ul > li > a {
+        background-color: rgb(157, 34, 60);
+        background-image: -webkit-linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        background-image: -moz-linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        background-image: -o-linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        background-image: linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.1);
+        color: rgb(255,255,255);
+        display: block;
+        font-size: .85rem;
+        font-weight: 500;
+        height: 50px;
+        letter-spacing: .5rem;
+        line-height: 50px;
+        text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        text-transform: uppercase;
+        transition: all .1s ease;
+        text-decoration: none;
+      }
+
+        nav.vertical > ul > li > a:hover {
+         background-color: rgb(114, 51, 98);
+         background-image: -webkit-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         background-image: -moz-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         background-image: -o-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         background-image: linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98)); 
+         cursor: pointer;
+        }
+        
+          nav.vertical > ul > li > div {
+            background-color: rgb(255,255,255);
+          }
+ 
+          nav.vertical > ul > li > div > ul {
+            list-style-type: none;
+          }
+
+            nav.vertical > ul > li > div > ul > li > a {
+             background-color: rgb(255,255,255);
+             border-bottom: 1px solid rgba(0,0,0,.05);
+             color: #333331;
+             display: block;
+             font-size: 1.1rem;
+             padding: 10px 0;
+             text-decoration: none;
+             transition: all 0.15s linear;
+            }
+
+              nav.vertical > ul > li > div > ul > li:hover > a {
+                background-color: lightBlue;
+                color: rgb(255,255,255);
+                padding: 10px 0 10px 50px;
+              }
+background: ##229cff;
+background-image: url("zenbg-1.png"), url("zenbg-2.png");
+background-repeat: repeat-x, repeat;
+
 	</style>
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
+<body>
+	<h1> Gator Meals</h1>
+	<h3>Chomp Those Calories</h3>
+	
+
+<div class="wrapper">
+  <nav class="vertical">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+        <div>
+          <ul>
+            <li><a href="Places_To_Eat.html">Places to Eat</a></li>
+            <li><a href="Check_Balance.html">Check Balance</a></li>
+            <li><a href="Search_Foods.html">Search Foods</a></li>
+            <li><a href="Data-Analytics.html">Data Analytics</a></li>
+            <li><a href="History.html">History</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">About</a>
+        <div>
+          <ul>
+            <li><a href="Purpose.html">Purpose</a></li>
+            <li><a href="Motivation.html">Motivation</a></li>
+            <li><a href="Related_Work.html">Related Work</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">Contact Information</a>
+        <div>
+          <ul>
+            <li><a href="https://alleghenycollege.catertrax.com/shopcustcontact.asp?intOrderID=&intCustomerID=">Parkhurst</a></li>
+            <li><a href="Developer.html">Developer</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  </div>
+	
+</body>
 </html>
